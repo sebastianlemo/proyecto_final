@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="./img/Adidas-Logo-Transparent-Background.png" alt="logo_adidas" class="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Catalogo
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Hombre</a></li>
+                                <li><a class="dropdown-item" href="./women.html">Mujer</a></li>
+                                
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler   icon-tabler-shopping-cart-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M6 2a1 1 0 0 1 .993 .883l.007 .117v1.068l13.071 .935a1 1 0 0 1 .929 1.024l-.01 .114l-1 7a1 1 0 0 1 -.877 .853l-.113 .006h-12v2h10a3 3 0 1 1 -2.995 3.176l-.005 -.176l.005 -.176c.017 -.288 .074 -.564 .166 -.824h-5.342a3 3 0 1 1 -5.824 1.176l-.005 -.176l.005 -.176a3.002 3.002 0 0 1 1.995 -2.654v-12.17h-1a1 1 0 0 1 -.993 -.883l-.007 -.117a1 1 0 0 1 .883 -.993l.117 -.007h2zm0 16a1 1 0 1 0 0 2a1 1 0 0 0 0 -2zm11 0a1 1 0 1 0 0 2a1 1 0 0 0 0 -2z" stroke-width="0" fill="currentColor"></path>
+                                </svg>
+                            </a>
+                            <div class="dropdown-menu" id="carrito">
+                                <table class="table table-striped table-hover" id="lista-carrito">
+                                    <thead>
+                                        <th>titulo</th>
+                                        <th>precio</th>
+                                        <th>cantidad</th>
+                                        <th>subtotal</th>
+                                    </thead>
+                                    <tbody></tbody>
+                                    <tfoot></tfoot>
+                                </table>
+                                <a href="./pago.html" target="_blank" class="btn btn-sm btn-primary" >Comprar</a>
+                                <a href="#" class="btn btn-sm btn-dark" id="vaciar-carrito">Borrar</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="title d-flex justify-content-center">
+            <h1 class="text-white">TRICSHOP</h1>
+        </div>
+    </header>
+
+    <main class="container" id="lista-productos">
+        <h1 class="text-center text-bg-light">Productos Para Hombre</h1>
+        <section class="row">
+            <div class="col-lg-2  mt-3">
+                <div class="card hola" >
+                    <img src="./img/pexels-melvin-buezo-2529148.jpg" class="card-img-top imgCompras" alt="">
+                    <div class="card-body hola1">
+                        <h5 class="card-title">Nike running</h5>
+                        <p class="card-text">Estos son unos tenis deportivos con una unidad de aire visible en el talón </p>
+                        <p class="precio">$150 USD</p>
+                        <a href="#" class="btn btn-primary agregar-carrito mt-4" data-id="1">Agregar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2  mt-3">
+                <div class="card hola" >
+                    <img src="./img/pexels-melvin-buezo-2529157.jpg" class="card-img-top imgCompras" alt="">
+                    <div class="card-body hola1">
+                        <h5 class="card-title">Nike force 1</h5>
+                        <p class="card-text">Los Air Force 1 son icónicos por su diseño clásico y versatilidad. Son zapatillas de baloncesto .</p>
+                        <p class="precio">$200 USD</p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="2">Agregar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2  mt-3">
+                <div class="card hola" >
+                    <img src="./img/pexels-wesley-davi-15336560.jpg" class="card-img-top imgCompras" alt="cursohtml">
+                    <div class="card-body hola1">
+                        <h5 class="card-title">Nike react</h5>
+                        <p class="card-text">Estos tenis cuentan con la tecnología React de Nike, que ofrece una amortiguación suave.</p>
+                        <p class="precio">$225 USD</p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="3">Agregar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2  mt-3">
+                <div class="card hola" >
+                    <img src="./img/pexels-hamza-nouasria-12628400.jpg" class="card-img-top imgCompras" alt="">
+                    <div class="card-body hola1">
+                        <h5 class="card-title">Nike Cortez</h5>
+                        <p class="card-text">Los Cortez son un modelo retro con un aspecto atemporal. Tienen una parte superior de cuero</p>
+                        <p class="precio">$250 USD</p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="4">Agregar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2  mt-3">
+                <div class="card hola" >
+                    <img src="./img/pexels-ana-dvoranen-4490019.jpg" class="card-img-top imgCompras" alt="">
+                    <div class="card-body hola1">
+                        <h5 class="card-title">Nike SB</h5>
+                        <p class="card-text">Los SB Dunk son zapatillas diseñadas específicamente para el skateboard, con una suela plana y duradera</p>
+                        <p class="precio">$300 USD</p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="5">Agregar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2  mt-3">
+                <div class="card hola" >
+                    <img src="./img/pexels-jd-danny-2385477.jpg" class="card-img-top imgCompras" alt="">
+                    <div class="card-body hola1">
+                        <h5 class="card-title">Nike Blazer</h5>
+                        <p class="card-text">Los Blazers son zapatillas de estilo retro con un toque de moda. Tienen un perfil alto </p>
+                        <p class="precio">$350 USD</p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="6">Agregar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2  mt-3">
+                <div class="card hola">
+                    <img src="./img/pexels-aditya-aiyar-1407354.jpg" class="card-img-top  imgCompras" alt="">
+                    <div class="card-body hola1">
+                        <h5 class="card-title">Adidas Ultraboost</h5>
+                        <p class="card-text" > Los Ultraboost 21 son zapatillas de running de Adidas que ofrecen una comodidad excepcional </p>
+                        <p class="precio">$300 USD</p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="7">Agregar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2  mt-3">
+                <div class="card hola">
+                    <img src="./img/pexels-amar-preciado-9993287.jpg" class="card-img-top  imgCompras" alt="">
+                    <div class="card-body hola1">
+                        <h5 class="card-title">Adidas Stam Smith</h5>
+                        <p class="card-text">Los Stan Smith son un clásico de Adidas, con su diseño minimalista y elegante. Son zapatillas casuales.</p>
+                        <p class="precio">$400 USD</p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="8">Agregar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2  mt-3">
+                <div class="card hola">
+                    <img src="./img/pexels-mnz-1599005.jpg" class="card-img-top  imgCompras" alt="">
+                    <div class="card-body hola1">
+                        <h5 class="card-title">Adidas Predator</h5>
+                        <p class="card-text"> Estos son zapatos de fútbol de Adidas diseñados para un control preciso del balón totalmente deportivas.</p>
+                        <p class="precio">$300 USD</p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="9">Agregar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2  mt-3">
+                <div class="card hola">
+                    <img src="./img/pexels-mnz-1619652.jpg" class="card-img-top  imgCompras" alt="">
+                    <div class="card-body hola1">
+                        <h5 class="card-title">Adidas Superstar</h5>
+                        <p class="card-text">Los Superstar son icónicos por su diseño clásico con las tres franjas de Adidas y la punta de goma en forma de concha.</p>
+                        <p class="precio">$500 USD</p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="10">Agregar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2  mt-3">
+                <div class="card hola">
+                    <img src="./img/pexels-pixabay-39362.jpg" class="card-img-top  imgCompras" alt="">
+                    <div class="card-body hola1">
+                        <h5 class="card-title">Balon Adidas</h5>
+                        <p class="card-text">El balón Tango de Adidas es un balón de fútbol de alta calidad que se ha utilizado en competiciones de renombre.</p>
+                        <p class="precio">$350 USD</p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="11">Agregar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2  mt-3">
+                <div class="card hola">
+                    <img src="./img/pexels-tembela-bohle-1102874.jpg" class="card-img-top  imgCompras" alt="">
+                    <div class="card-body hola1">
+                        <h5 class="card-title">Maleta Adidas</h5>
+                        <p class="card-text">La maleta Team Issue de Adidas es una opción resistente y espaciosa para llevar tus pertenencias mientras viajas.</p>
+                        <p class="precio">$300 USD</p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="12">Agregar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2  mt-3">
+                <div class="card hola">
+                    <img src="./img/pexels-felipepelaquim-13566363.jpg" class="card-img-top  imgCompras" alt="">
+                    <div class="card-body hola1">
+                        h5 class="card-title">Reebok Classic</h5>
+                        <p class="card-text">Las Classic Leather de Reebok son conocidas por su diseño atemporal y su comodidad. Son zapatillas casuales </p>
+                        <p class="precio">$350 USD</p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="13">Agregar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2  mt-3">
+                <div class="card hola">
+                    <img src="./img/pexels-felipepelaquim-10050106.jpg" class="card-img-top  imgCompras" alt="">
+                    <div class="card-body hola1">
+                        <h5 class="card-title">Reebok Nano X</h5>
+                        <p class="card-text">Las Nano X son zapatillas diseñadas para entrenamientos de alta intensidad y levantamiento de pesas.</p>
+                        <p class="precio">$299 USD</p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="14">Agregar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2  mt-3">
+                <div class="card hola">
+                    <img src="./img/pexels-jamaal-cooks-6698234.jpg" class="card-img-top  imgCompras" alt="">
+                    <div class="card-body hola1">
+                        <h5 class="card-title">Puma Cali</h5>
+                        <p class="card-text">Las Puma Cali son zapatillas inspiradas en el estilo de vida californiano, con una parte superior de cuero.</p>
+                        <p class="precio">$300 USD</p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="15">Agregar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2  mt-3">
+                <div class="card hola">
+                    <img src="./img/pexels-suraj-b-2759783.jpg" class="card-img-top  imgCompras" alt="">
+                    <div class="card-body hola1">
+                        <h5 class="card-title">Puma Future</h5>
+                        <p class="card-text"> Las Future Rider son zapatillas retro con un toque moderno. Tienen colores vibrantes y una suela cómoda.</p>
+                        <p class="precio">$390 USD</p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="16">Agregar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2  mt-3">
+                <div class="card hola">
+                    <img src="./img/pexels-victor-filemon-lopez-sanchez-15036819.jpg" class="card-img-top  imgCompras" alt="">
+                    <div class="card-body hola1">
+                        <h5 class="card-title">Puma RS-X</h5>
+                        <p class="card-text">Las RS-X son zapatillas inspiradas en el estilo de los años 80 con detalles llamativos y una suela gruesa y suave.</p>
+                        <p class="precio">$380 USD</p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="17">Agregar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2  my-3">
+                <div class="card hola">
+                    <img src="./img/pexels-wolrider-yurtseven-18368130.jpg" class="card-img-top  imgCompras" alt="">
+                    <div class="card-body hola1">
+                        <h5 class="card-title">Puma Ignite</h5>
+                        <p class="card-text">Las Puma Ignite son zapatillas diseñadas para correr, con una amortiguación reactiva que brinda comodidad</p>
+                        <p class="precio">$299 USD</p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="18">Agregar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="inicio2">
+            <h4>Horario de atencion</h4>
+            <p>Lunes-Viernes: 8:00 AM-6:00 PM / Sabados: 8:00 AM-12:00 PM</p>
+        </div>
+        <div class="inicio3">
+            <div>
+                <h4>Telefonos Fijos:</h4>
+                <div>
+                    <a href="tel:">+57 (1) 750 8086</a>
+                    <a href="tel:">+57 (1) 750 3060</a><br>
+                    <a href="tel:">+57 (1) 750 4050</a>
+                </div>
+            </div>
+            <div>
+                <h4>Celular de whatsapp</h4>
+                <a href="tel:">+57 320-850-730</a>
+                <h4>Horario de atencion:</h4>
+                <p> De 8:00 AM a 5:00 PM</p>
+            </div>
+            <div>
+                <h4>Redes Sociales</h4>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
+                    <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"></path>
+                    </svg>
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                    <path d="M16.5 8.5l0 .01"></path>
+                    </svg>
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="./carrito.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>

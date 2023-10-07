@@ -1,0 +1,62 @@
+.logo{
+    width: 80px;
+
+}
+.title{
+    background-color: rgb(107, 212, 212);
+    
+}
+.home{
+    height: 80vh;
+}
+.carruselimg{
+    height: 100vh;
+    background-position: bottom;
+}
+footer{
+    text-align: center;
+    background-color: rgb(107, 212, 212);
+}
+.inicio2{
+    padding-left: 120px;
+    margin-bottom: 10px;
+    color: white;
+}
+.inicio3{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+@media(max-width: 550px){
+    .inicio2{
+        padding:0;
+        text-align:center;
+    }
+    .inicio3{
+        display:inline-block;
+    }
+}
+.inicio3 a{
+    text-decoration: none;
+    color: white;
+}
+
+.imgCompras{
+    width: 50vh;
+    height: 20vh;
+}
+
+.card.hola{
+    height: 500px;
+}
+
+.hola2{
+    height: 80vh;
+}
+.hola3{
+    height: 80vh;
+}
+
+/* .select{
+    width: 50px;
+} */
